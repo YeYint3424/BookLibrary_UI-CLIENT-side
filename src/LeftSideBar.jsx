@@ -16,18 +16,18 @@ const LeftSideBar = () => {
             <span className="mx-4">All Book</span>
           </li>
         </Link>
-        <a href="#">
+        
           <li>
             <i className="fa-solid fa-book-bookmark"></i>
             <span className="mx-4">Bookmarks</span>
           </li>
-        </a>
-        <a href="#">
+        
+        
           <li>
             <i className="fa-solid fa-heart"></i>
             <span className="mx-4">Wish List</span>
           </li>
-        </a>
+        
       </ul>
     </>
   );
