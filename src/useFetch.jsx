@@ -33,15 +33,15 @@ const useFetch = (url) => {
         fetch(url, { signal: abortController.signal })
             .then((res) => res.json())
             .then((fetchedData) => {
-                setData(fetchedData); // Use setData to update the state
-                setIsPending(false); // Use setIsPending to update the state
+                setData(fetchedData);
+                setIsPending(false); 
             })
             .catch((err) => console.log(err));
 
-        return () => abortController.abort(); // Abort the fetch on cleanup
+        return () => abortController.abort();
     }, [url]);
 
-    return { data, isPending }; // Return an object with data and isPending
+    return { data, isPending };
 };
 
 export default useFetch;

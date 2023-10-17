@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: space-around;
 }
+ul a li:hover{
+  border-radius: 4px;
+  background-color: gray;
+  color: #000;
+}
 
 .bg-tran{
   background: transparent;
@@ -32,6 +37,7 @@
 }
 ul{
   list-style: none;
+  padding-left: 0;
 }
 ul a{
   text-decoration: none;
@@ -39,6 +45,9 @@ ul a{
 }
 
 li{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
   height: 3rem;
 }
 .p-abs{
@@ -73,4 +82,21 @@ a{
   text-align: center;
   font-size: 50px;
   margin-top: 8rem;
+}
+.main-all-book{
+  margin: 0%;
+  padding: 0%;
+  background-image: url('wooden-bg.jpg');
+  border-radius: 10px;
+}
+.book-sheif-bottom {
+  background: linear-gradient(#bd6838, #683b23);
+  width: 100%;
+  height: 10px;
+}
+.book{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

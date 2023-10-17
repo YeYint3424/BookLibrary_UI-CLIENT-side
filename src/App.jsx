@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="body">
         <NavBar />
-        <div className="container-fluid row">
+        <div className="container-fluid row m-0 p-0">
           <div className="left-sideBar col-2">
             <LeftSideBar />
           </div>
@@ -23,7 +23,7 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/allBooks">
+              <Route path="/all-books">
                 <AllBooks />
               </Route>
 

@@ -10,7 +10,7 @@ const LeftSideBar = () => {
             <span className="mx-4">Home</span>
           </li>
         </Link>
-        <Link to="/allBooks">
+        <Link to="/all-books">
           <li>
             <i className="fa-solid fa-book-open"></i>
             <span className="mx-4">All Book</span>
