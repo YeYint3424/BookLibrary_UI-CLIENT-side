@@ -51,7 +51,7 @@ const Home = () => {
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item" role="presentation">
               <button
-                className="nav-link tab active bg-tran"
+                className="nav-link tab active"
                 id="home-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#home-tab-pane"
@@ -91,8 +91,8 @@ const Home = () => {
                   <i className="fa-solid fa-spinner fa-spin-pulse fiftypx"></i>
                 )}
                 {books &&
-                  books.map((book) => (
-                    <div className="card col-lg-3 col-md-4 col-sm-6 p-0 mt-3 bookList">
+                  books.map((book,index) => (
+                    <div className="card col-lg-3 col-md-4 col-sm-6 p-0 mt-3 bookList" key={index}>
                       <img
                         className="hist_img"
                         src="https://m.media-amazon.com/images/I/71ecqHMyQ6L._AC_UF1000,1000_QL80_.jpg"

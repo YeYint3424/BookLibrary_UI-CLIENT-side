@@ -8,6 +8,7 @@ import AllBooks from "./AllBooks";
 import LeftSideBar from "./LeftSideBar";
 import Home from "./Home";
 import "./App.css";
+import BookContent from "./BookContent";
 
 function App() {
   return (
@@ -23,10 +24,12 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/all-books">
+              <Route exact path="/all-books">
                 <AllBooks />
               </Route>
-
+              <Route exact path='/book-content/:id'>
+                <BookContent />
+              </Route>
             </Switch>
           </div>
         </div>

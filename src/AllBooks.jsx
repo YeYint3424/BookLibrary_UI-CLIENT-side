@@ -7,7 +7,7 @@ const AllBooks = () => {
   );
   return (
     <>
-      <div className="main-all-book m-0 p-5">
+      <div className="main-all-book col-12 m-0 p-5">
         <div className="row mt-2 pt-2 mb-0">
           {isPending && (
             <i className="fa-solid fa-spinner fa-spin-pulse fiftypx"></i>
@@ -15,7 +15,7 @@ const AllBooks = () => {
           {books &&
             books.map((book,index) => (
               <div key={index} className="col-3 px-5">
-                <Link to="#">
+                <Link to={`/book-content/${book.book.id}`}>
                   <div className="card book mx-0 mt-3">
                     <img
                       className="card-body all-book-img m-0 p-0"
